@@ -1,0 +1,20 @@
+fastapi>=0.121.0,<1.0.0
+uvicorn[standard]>=0.38.0,<1.0.0
+pydantic>=2.12.0,<3.0.0
+pydantic-settings>=2.11.0,<3.0.0
+httpx>=0.28.1,<1.0.0
+langgraph>=1.2.14,<2.0.0
+langgraph-checkpoint-redis>=0.5.2,<0.6.0
+langgraph-checkpoint-mongodb>=0.5.0,<1.0.0
+redis>=8.1.0,<9.0.0
+pymongo>=4.18.3,<5.0.0
+neo4j>=6.0.0,<7.0.0
+python-dotenv>=1.1.0,<2.0.0
+pytest>=8.4.0,<10.0.0
+pytest-asyncio>=1.2.0,<2.0.0
+
+# Optional local semantic vector retrieval; lexical/SQLite retrieval still works without it.
+-r app/requirements_chroma.txt
+
+# ISO-3166 alpha-2/alpha-3 country-code validation for assistant and document forms.
+pycountry>=24.6.1,<27.0.0

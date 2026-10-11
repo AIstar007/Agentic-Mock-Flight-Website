@@ -1,0 +1,295 @@
+{
+  "bookings": [
+    {
+      "record_locator": "EM8K2Q",
+      "last_name": "THOMAS",
+      "booking_status": "CONFIRMED",
+      "payment_status": "PAID_IN_FULL",
+      "balance_due": 0,
+      "passengers": [
+        {
+          "passenger_key": "PAX-001",
+          "passenger_type": "ADT",
+          "first_name": "ALEN",
+          "last_name": "THOMAS",
+          "title": "MR",
+          "nationality": "IN",
+          "residence_country": "IN",
+          "date_of_birth": "1999-08-09",
+          "gender": "M",
+          "infant": false
+        },
+        {
+          "passenger_key": "PAX-002",
+          "passenger_type": "ADT",
+          "first_name": "EMMA",
+          "last_name": "THOMAS",
+          "title": "MS",
+          "nationality": "IN",
+          "residence_country": "IN",
+          "date_of_birth": "1998-04-18",
+          "gender": "F",
+          "infant": false
+        }
+      ],
+      "journeys": [
+        {
+          "journey_key": "JNY-001",
+          "origin": "DEL",
+          "destination": "DXB",
+          "international": true,
+          "departure_offset_hours": 18,
+          "marketing_carrier": "EK",
+          "operating_carrier": "EK",
+          "codeshare": false,
+          "transit_points": []
+        }
+      ],
+      "queues": [],
+      "ssr_requirements_valid": true,
+      "mock_timatic_case": "CLEAR",
+      "demo_notes": "Synthetic international journey. Enter future passport dates and select the explicitly mocked verified-evidence option to see the success path."
+    },
+    {
+      "record_locator": "EM5M8Q",
+      "last_name": "CONNECT",
+      "booking_status": "CONFIRMED",
+      "payment_status": "PAID_IN_FULL",
+      "balance_due": 0,
+      "passengers": [
+        {
+          "passenger_key": "PAX-050",
+          "passenger_type": "ADT",
+          "first_name": "SAM",
+          "last_name": "CONNECT",
+          "title": "MX",
+          "nationality": "IN",
+          "residence_country": "IN",
+          "date_of_birth": "1994-03-03",
+          "gender": "U",
+          "infant": false
+        }
+      ],
+      "journeys": [
+        {
+          "journey_key": "JNY-050A",
+          "origin": "DEL",
+          "destination": "DXB",
+          "international": true,
+          "departure_offset_hours": 36,
+          "marketing_carrier": "EK",
+          "operating_carrier": "EK",
+          "codeshare": false,
+          "transit_points": []
+        },
+        {
+          "journey_key": "JNY-050B",
+          "origin": "DXB",
+          "destination": "LHR",
+          "international": true,
+          "departure_offset_hours": 34,
+          "marketing_carrier": "EK",
+          "operating_carrier": "EK",
+          "codeshare": false,
+          "transit_points": []
+        }
+      ],
+      "queues": [],
+      "ssr_requirements_valid": true,
+      "mock_timatic_case": "CLEAR",
+      "demo_notes": "Synthetic two-journey itinerary. Document validation fans out per passenger and journey; assign a seat on both journeys."
+    },
+    {
+      "record_locator": "EM4R9Z",
+      "last_name": "KHAN",
+      "booking_status": "CONFIRMED",
+      "payment_status": "PAID_IN_FULL",
+      "balance_due": 0,
+      "passengers": [
+        {
+          "passenger_key": "PAX-101",
+          "passenger_type": "ADT",
+          "first_name": "SARA",
+          "last_name": "KHAN",
+          "title": "MS",
+          "nationality": "IN",
+          "residence_country": "IN",
+          "date_of_birth": "1993-06-10",
+          "gender": "F",
+          "infant": false
+        }
+      ],
+      "journeys": [
+        {
+          "journey_key": "JNY-101",
+          "origin": "DEL",
+          "destination": "LHR",
+          "international": true,
+          "departure_offset_hours": 20,
+          "marketing_carrier": "EK",
+          "operating_carrier": "EK",
+          "codeshare": false,
+          "transit_points": [
+            "DXB"
+          ]
+        }
+      ],
+      "queues": [],
+      "ssr_requirements_valid": true,
+      "mock_timatic_case": "VISA_REVIEW",
+      "demo_notes": "Synthetic scenario that must remain REVIEW_REQUIRED regardless of chatbot persuasion."
+    },
+    {
+      "record_locator": "EM6D1M",
+      "last_name": "JOHNSON",
+      "booking_status": "CONFIRMED",
+      "payment_status": "PAID_IN_FULL",
+      "balance_due": 0,
+      "passengers": [
+        {
+          "passenger_key": "PAX-201",
+          "passenger_type": "ADT",
+          "first_name": "JORDAN",
+          "last_name": "JOHNSON",
+          "title": "MR",
+          "nationality": "US",
+          "residence_country": "US",
+          "date_of_birth": "1989-11-07",
+          "gender": "M",
+          "infant": false
+        }
+      ],
+      "journeys": [
+        {
+          "journey_key": "JNY-201",
+          "origin": "DXB",
+          "destination": "CDG",
+          "international": true,
+          "departure_offset_hours": 28,
+          "marketing_carrier": "EK",
+          "operating_carrier": "EK",
+          "codeshare": false,
+          "transit_points": []
+        }
+      ],
+      "queues": [],
+      "ssr_requirements_valid": true,
+      "mock_timatic_case": "CLEAR",
+      "demo_notes": "Use a past passport expiry to test deterministic document failure."
+    },
+    {
+      "record_locator": "DM3A1B",
+      "last_name": "TESTER",
+      "booking_status": "CONFIRMED",
+      "payment_status": "PAID_IN_FULL",
+      "balance_due": 0,
+      "passengers": [
+        {
+          "passenger_key": "PAX-301",
+          "passenger_type": "ADT",
+          "first_name": "DEMO",
+          "last_name": "TESTER",
+          "title": "MR",
+          "nationality": "IN",
+          "residence_country": "IN",
+          "date_of_birth": "1990-01-01",
+          "gender": "M",
+          "infant": false
+        }
+      ],
+      "journeys": [
+        {
+          "journey_key": "JNY-301",
+          "origin": "BOM",
+          "destination": "DEL",
+          "international": false,
+          "departure_offset_hours": 26,
+          "marketing_carrier": "EK",
+          "operating_carrier": "EK",
+          "codeshare": false,
+          "transit_points": []
+        }
+      ],
+      "queues": [],
+      "ssr_requirements_valid": true,
+      "mock_timatic_case": "CLEAR",
+      "demo_notes": "Synthetic domestic-rule test only; not a claim that Emirates operates this route."
+    },
+    {
+      "record_locator": "EM9C3X",
+      "last_name": "PARTNER",
+      "booking_status": "CONFIRMED",
+      "payment_status": "PAID_IN_FULL",
+      "balance_due": 0,
+      "passengers": [
+        {
+          "passenger_key": "PAX-401",
+          "passenger_type": "ADT",
+          "first_name": "CASEY",
+          "last_name": "PARTNER",
+          "title": "MX",
+          "nationality": "IN",
+          "residence_country": "IN",
+          "date_of_birth": "1995-02-02",
+          "gender": "U",
+          "infant": false
+        }
+      ],
+      "journeys": [
+        {
+          "journey_key": "JNY-401",
+          "origin": "DEL",
+          "destination": "DXB",
+          "international": true,
+          "departure_offset_hours": 16,
+          "marketing_carrier": "EK",
+          "operating_carrier": "QF",
+          "codeshare": true,
+          "transit_points": []
+        }
+      ],
+      "queues": [],
+      "ssr_requirements_valid": true,
+      "mock_timatic_case": "CLEAR",
+      "demo_notes": "Synthetic codeshare scenario to test a reference-derived restriction."
+    },
+    {
+      "record_locator": "EM7Q1P",
+      "last_name": "BALANCE",
+      "booking_status": "CONFIRMED",
+      "payment_status": "PAYMENT_DUE",
+      "balance_due": 150,
+      "passengers": [
+        {
+          "passenger_key": "PAX-501",
+          "passenger_type": "ADT",
+          "first_name": "RILEY",
+          "last_name": "BALANCE",
+          "title": "MR",
+          "nationality": "IN",
+          "residence_country": "IN",
+          "date_of_birth": "1992-03-12",
+          "gender": "M",
+          "infant": false
+        }
+      ],
+      "journeys": [
+        {
+          "journey_key": "JNY-501",
+          "origin": "DEL",
+          "destination": "DXB",
+          "international": true,
+          "departure_offset_hours": 14,
+          "marketing_carrier": "EK",
+          "operating_carrier": "EK",
+          "codeshare": false,
+          "transit_points": []
+        }
+      ],
+      "queues": [],
+      "ssr_requirements_valid": true,
+      "mock_timatic_case": "CLEAR",
+      "demo_notes": "Synthetic booking with outstanding balance."
+    }
+  ]
+}

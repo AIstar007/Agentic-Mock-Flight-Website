@@ -1,0 +1,410 @@
+{
+  "documents": [
+    {
+      "id": "EMIRATES_ONLINE_CHECKIN_WINDOW",
+      "title": "Emirates online check-in window",
+      "category": "checkin",
+      "jurisdiction": "airline_public_information",
+      "source_type": "official_public_webpage",
+      "source_url": "https://www.emirates.com/english/help/faq-topics/preparing-to-travel/faq/how-do-i-use-online-check-in/",
+      "verified_at": "2026-10-10",
+      "content": "Emirates public FAQ states online check-in is available 48 hours before scheduled departure and closes 90 minutes before scheduled departure for passengers with an e-ticket. The mock app uses this as a reference for its international Emirates-inspired test policy; actual eligibility must still be confirmed by the airline's systems."
+    },
+    {
+      "id": "IATA_TIMATIC_OVERVIEW",
+      "title": "IATA Timatic AutoCheck overview",
+      "category": "documents",
+      "jurisdiction": "international_travel_documentation",
+      "source_type": "official_public_webpage",
+      "source_url": "https://www.iata.org/en/services/compliance/timatic/autocheck/",
+      "verified_at": "2026-10-10",
+      "content": "IATA describes Timatic AutoCheck as an API-integrated solution for automated checks of passport, visa, health-document and travel-restriction requirements. An authorized live integration is separate from the local mock adapter, and this POC does not provide a real OK-to-board decision."
+    },
+    {
+      "id": "IATA_TRAVEL_CENTRE",
+      "title": "IATA Travel Centre",
+      "category": "documents",
+      "jurisdiction": "international_travel_documentation",
+      "source_type": "official_public_webpage",
+      "source_url": "https://www.iata.org/en/travel-centre/",
+      "verified_at": "2026-10-10",
+      "content": "The IATA Travel Centre is a public travel information resource. Public lookup access is not equivalent to authorization to use the commercial Timatic AutoCheck API or its complete data set. When a case is uncertain, consult an authorized airline channel or the official IATA source."
+    },
+    {
+      "id": "NAVITAIRE_NEW_SKIES_OVERVIEW",
+      "title": "Navitaire New Skies platform overview",
+      "category": "booking",
+      "jurisdiction": "provider_capabilities",
+      "source_type": "official_public_webpage",
+      "source_url": "https://www.navitaire.com/new-skies-reservation-system",
+      "verified_at": "2026-10-10",
+      "content": "Navitaire describes New Skies as a reservation, retailing and distribution platform with digital APIs and ancillary capabilities. This project has a mock adapter modeled on the uploaded reference workflow; it is not connected to Emirates or to a live Navitaire tenant. Provider credentials and permission scopes are required for actual integration."
+    },
+    {
+      "id": "MOCK_DATA_NOTICE",
+      "title": "Mock eligibility and document validation limitations",
+      "category": "safety",
+      "jurisdiction": "demo_only",
+      "source_type": "project_policy",
+      "source_url": "README.md",
+      "verified_at": "2026-10-10",
+      "content": "All passenger records, booking references, schedules, passport values, visa evidence states, seat inventory, fees, and document decisions in this demo are synthetic. They cannot establish legal entry permission or real airline eligibility. An unknown, conflicting or failed external check must be escalated and must never default to approval."
+    },
+    {
+      "id": "PRIVACY_MINIMIZATION",
+      "title": "Demo privacy and data minimization policy",
+      "category": "privacy",
+      "jurisdiction": "project_policy",
+      "source_type": "project_policy",
+      "source_url": "SECURITY_GOVERNANCE.md",
+      "verified_at": "2026-10-10",
+      "content": "Use synthetic data only. Never submit real passenger data, passport details, PNRs, access tokens or internal policies to this demo. Audit events must record statuses and reason codes rather than passport numbers or full booking payloads. Session data expires after the configured short retention period."
+    },
+    {
+      "id": "EMIRATES_BOOKING_FLOW",
+      "title": "Booking flights online",
+      "category": "booking",
+      "jurisdiction": "airline_public_information",
+      "source_type": "official_public_webpage",
+      "source_url": "https://www.emirates.com/us/english/help/faq-topics/booking-with-emirates/",
+      "verified_at": "2026-10-10",
+      "content": "Emirates' public booking FAQ describes online booking as choosing travel cities and dates, selecting a suitable flight, confirming personal details, and choosing a payment method. Customers may be able to request or purchase seats, additional baggage or other services. Availability and payment options depend on the actual point of sale and itinerary. This POC only simulates these steps and does not query live fares or inventory."
+    },
+    {
+      "id": "EMIRATES_SEAT_SELECTION",
+      "title": "Seat selection guidance",
+      "category": "seats",
+      "jurisdiction": "airline_public_information",
+      "source_type": "official_public_webpage",
+      "source_url": "https://www.emirates.com/english/help/faq-topics/preparing-to-travel/faq/how-do-i-use-online-check-in/",
+      "verified_at": "2026-10-10",
+      "content": "Emirates' public FAQ says seat selection is optional and a seat is provided when travelling if no advance selection is made. Whether advance seat selection is free or paid depends on the cabin, fare type, itinerary and other eligibility conditions. The seat prices in this demo are fictional and do not represent Emirates pricing."
+    },
+    {
+      "id": "EMIRATES_MANAGE_BOOKING_CHANGES",
+      "title": "Managing and changing a booking",
+      "category": "manage_booking",
+      "jurisdiction": "airline_public_information",
+      "source_type": "official_public_webpage",
+      "source_url": "https://www.emirates.com/english/help/faq-topics/cancelling-or-changing-a-booking/",
+      "verified_at": "2026-10-10",
+      "content": "Emirates' public FAQ says eligible bookings may be managed online and that available changes and any charges depend on the fare conditions and booking eligibility. This demo only retrieves its own synthetic records; it cannot change or cancel a real reservation. Use the official Emirates Manage Booking service for a real booking."
+    },
+    {
+      "id": "DEMO_PAYMENT_SAFETY",
+      "title": "Demo payment safety",
+      "category": "payment",
+      "jurisdiction": "demo_only",
+      "source_type": "project_policy",
+      "source_url": "README.md",
+      "verified_at": "2026-10-10",
+      "content": "The booking payment step is a simulation. Do not enter real card numbers, CVV values, bank credentials or payment details. Choose the simulated approve or decline outcome to exercise the workflow; no real payment is initiated or captured. Displayed fares, fees and extras are fictional."
+    },
+    {
+      "id": "DEMO_BOOKING_FARES",
+      "title": "Demo flight availability and fares",
+      "category": "fares",
+      "jurisdiction": "demo_only",
+      "source_type": "project_policy",
+      "source_url": "README.md",
+      "verified_at": "2026-10-10",
+      "content": "All flight schedules, connections, fares, seat availability, ancillary prices, payment outcomes and booking references shown by this Emirates-inspired POC are generated demonstration data. The search results are not live flight availability or an offer to sell a ticket. A generated reference is not a valid reservation or travel document."
+    },
+    {
+      "id": "PDP_PASSENGER_DETAILS",
+      "title": "Passenger details and consent workflow",
+      "category": "passenger_details",
+      "jurisdiction": "demo_only",
+      "source_type": "project_policy",
+      "source_url": "README.md",
+      "verified_at": "2026-10-10",
+      "content": "The passenger-details assistant guides the user through mandatory passenger name/title fields, contact information and consent in sequence. It should ask for only missing fields, must not invent personal details, and must keep the user in control of saved values. Personal details entered in this POC should be synthetic and are not sent to an airline."
+    },
+    {
+      "id": "EMIRATES_BAGGAGE_POLICY",
+      "title": "Emirates baggage allowance and policy",
+      "category": "baggage",
+      "jurisdiction": "airline_public_information",
+      "source_type": "official_public_webpage",
+      "source_url": "https://www.emirates.com/us/english/before-you-fly/baggage/checked-baggage/",
+      "verified_at": "2026-10-10",
+      "content": "Emirates states that checked baggage allowance depends on route, fare type and travel class. On many routes the weight concept applies, where the total baggage weight is counted; the piece concept applies on routes involving the Americas and Africa, subject to the ticket and route rules. Under the weight concept, an individual checked bag must not exceed 32 kg. Cabin baggage allowances also depend on class: Economy generally allows one carry-on piece up to 7 kg, Premium Economy one piece up to 10 kg, and Business or First Class allowances differ by item type and dimensions. Exact checked and cabin allowances, dimensions, and extra-baggage charges must be confirmed for the specific itinerary using the baggage rules, ticket or Emirates Manage Booking. This POC does not query a live booking or calculate a passenger-specific allowance."
+    },
+    {
+      "id": "EMIRATES_REFUND_POLICY",
+      "title": "Emirates refund and cancellation policy",
+      "category": "refunds",
+      "jurisdiction": "airline_public_information",
+      "source_type": "official_public_webpage",
+      "source_url": "https://www.emirates.com/english/help/faq-topics/cancelling-or-changing-a-booking/",
+      "verified_at": "2026-10-10",
+      "content": "Emirates states that a refund after cancellation depends on the fare conditions. Some tickets are non-refundable or may have cancellation charges. For eligible bookings, customers can manage a cancellation through Manage Your Booking and submit the applicable refund form. Refunds for unused or partially used tickets depend on the ticket fare conditions and the parts of the journey already used; the amount may not be proportional to the distance or number of flights flown. For a real booking, check its fare conditions and the official Emirates Manage Your Booking/refund process. This POC cannot calculate, approve or submit a real refund."
+    },
+    {
+      "id": "EMIRATES_BAGGAGE_LOST_PROPERTY",
+      "title": "Emirates baggage and lost property guidance",
+      "category": "baggage",
+      "jurisdiction": "airline_public_information",
+      "source_type": "official_public_webpage",
+      "source_url": "https://www.emirates.com/english/help/faq-topics/baggage-and-lost-property/",
+      "verified_at": "2026-10-10",
+      "content": "Emirates states that checked baggage allowance depends on the route and fare type; the exact allowance can be checked in Manage Your Booking or on the ticket. Weight or piece concepts depend on the route. For delayed baggage, passengers should report it at the airport baggage-services desk and obtain a Property Irregularity Report (PIR), which can be used to track the case. Claims for damaged baggage generally need to be registered before leaving the airport. For real trips, follow the current baggage service instructions and the specific itinerary; other operating airlines may have different baggage rules."
+    },
+    {
+      "id": "EMIRATES_ONBOARD_SERVICES",
+      "title": "Emirates onboard services, Wi-Fi and special meals",
+      "category": "onboard",
+      "jurisdiction": "airline_public_information",
+      "source_type": "official_public_webpage",
+      "source_url": "https://www.emirates.com/english/help/faq-topics/your-on-board-experience/",
+      "verified_at": "2026-10-10",
+      "content": "Emirates describes onboard services including its ice inflight entertainment system, Wi-Fi and meal options. Wi-Fi availability can vary by aircraft, route and service conditions and is not guaranteed on every flight; some packages may be paid while complimentary access may depend on the Skywards membership and current offer. Menu and special-meal choices depend on the route and service and should be checked for the actual booking. The current official onboard-experience page is the source for up-to-date options."
+    },
+    {
+      "id": "EMIRATES_SPECIAL_ASSISTANCE",
+      "title": "Emirates special assistance, medication and unaccompanied minors",
+      "category": "special_assistance",
+      "jurisdiction": "airline_public_information",
+      "source_type": "official_public_webpage",
+      "source_url": "https://www.emirates.com/english/help/faq-topics/special-assistance-and-requests/",
+      "verified_at": "2026-10-10",
+      "content": "Emirates publishes guidance on special assistance, accessible travel, medication and unaccompanied minors. Passengers who carry required medication should keep prescriptions and check the destination countries’ restrictions on importing medicines; storage and onboard support depend on the medication and medical needs. Special assistance, medical-clearance and unaccompanied-minor arrangements can depend on age, itinerary, operating carrier and circumstances, so passengers should make arrangements with Emirates in advance and consult the current official guidance."
+    },
+    {
+      "id": "EMIRATES_ANIMAL_TRAVEL",
+      "title": "Emirates travelling with pets and animals",
+      "category": "pets",
+      "jurisdiction": "airline_public_information",
+      "source_type": "official_public_webpage",
+      "source_url": "https://www.emirates.com/english/before-you-fly/baggage/unusual-baggage-and-special-allowances/",
+      "verified_at": "2026-10-10",
+      "content": "Emirates states that pets are generally not permitted in the cabin, with limited exceptions described on its official site. Depending on route and circumstances, animals may need to travel as cargo or may be accepted as checked baggage in the hold. Charges and document requirements vary with the animal, container, itinerary and destination; separate government import, veterinary and operating-carrier rules may apply. Verify the specific journey with Emirates and the destination authority before travel; this FAQ summary is not an acceptance or eligibility decision."
+    },
+    {
+      "id": "EMIRATES_DEVICE_USE_ONBOARD",
+      "title": "Emirates use of electronic devices onboard",
+      "category": "onboard_safety",
+      "jurisdiction": "airline_public_information",
+      "source_type": "official_public_webpage",
+      "source_url": "https://www.emirates.com/english/help/faq-topics/preparing-to-travel/",
+      "verified_at": "2026-10-10",
+      "content": "Emirates publishes instructions for using electronic devices onboard. Some devices must be in flight mode during taxi, takeoff, approach and landing, and cabin-crew announcements take precedence for the specific flight and aircraft. Permitted devices, battery restrictions and carriage rules depend on the item and applicable safety regulations. Check the current airline guidance and the relevant dangerous-goods rules for unusual or battery-powered equipment."
+    },
+    {
+      "id": "EMIRATES_DISRUPTED_TRAVEL",
+      "title": "Emirates disrupted travel and booking support",
+      "category": "disruption",
+      "jurisdiction": "airline_public_information",
+      "source_type": "official_public_webpage",
+      "source_url": "https://www.emirates.com/english/help/faq-topics/disrupted-travel/",
+      "verified_at": "2026-10-10",
+      "content": "Emirates provides a disrupted-travel help section for passengers affected by flight changes and disruption. Available options depend on the booking, reason for disruption, route, fare conditions, operating carrier and the current instructions issued by Emirates. Passengers should check their booking and official flight-status or disruption notices for current rebooking, cancellation and refund options. This POC cannot check live flight status or determine a passenger-specific compensation or refund entitlement."
+    },
+    {
+      "id": "EMIRATES_DANGEROUS_GOODS",
+      "title": "Emirates dangerous goods, batteries and power banks policy",
+      "category": "dangerous_goods",
+      "jurisdiction": "airline_public_information",
+      "source_type": "official_public_webpage",
+      "source_url": "https://www.emirates.com/english/before-you-fly/travel/dangerous-goods-policy/",
+      "verified_at": "2026-10-10",
+      "content": "Emirates maintains a dangerous-goods policy for items carried in cabin or checked baggage, with additional local customs and airport-security restrictions possible. Its published power-bank rules state that one power bank up to 100 Wh may be carried in cabin baggage only, with capacity rating visible; power banks must not be used to charge devices onboard and must not be charged from aircraft power. They must be stowed accessibly under the seat in front or in the seat pocket, not in overhead lockers. Emirates also restricts or prohibits some lithium-battery equipment and personal motorised vehicles such as motorised rideable scooters (electric scooters), hoverboards and mini-Segways. Check the current dangerous-goods page for the exact item and route before travelling; this summary is not item-specific clearance."
+    },
+    {
+      "id": "EMIRATES_VISA_PASSPORT_ENTRY",
+      "title": "Passport, visa, nationality, residency and transit requirements",
+      "category": "travel_documents",
+      "jurisdiction": "airline_public_information",
+      "source_type": "official_public_webpage",
+      "source_url": "https://www.emirates.com/english/before-you-fly/visa-passport-information/",
+      "verified_at": "2026-10-11",
+      "content": "Emirates says passengers are responsible for carrying correct travel documents and should check entry requirements before travel. Requirements can depend on passport holder/nationality, residency, destination and every transit country; non-standard travel documents can have different requirements. Emirates presents IATA-provided information as guidance that may change at short notice and recommends checking relevant destination authorities. Never infer visa-free entry from nationality alone. Ask for missing trip details only when needed; distinguish airline document checks from an immigration authority decision. This POC never determines real visa eligibility or authorizes travel."
+    },
+    {
+      "id": "EMIRATES_WEB_CHECKIN_STEPS",
+      "title": "Online check-in prerequisites and passenger groups",
+      "category": "checkin",
+      "jurisdiction": "airline_public_information",
+      "source_type": "official_public_webpage",
+      "source_url": "https://www.emirates.com/english/help/faq-topics/preparing-to-travel/",
+      "verified_at": "2026-10-11",
+      "content": "Emirates online check-in asks for booking reference/PNR and passenger surname(s). Its published FAQ says online check-in can cover up to nine adults and children travelling together on the same itinerary; an accompanying adult can check in when travelling with an infant, while passengers under 16 travelling without an adult must use normal airport check-in. The process may request Advance Passenger Information and may allow seat changes or adding missing Skywards details. Rules can change. This POC uses synthetic bookings and stricter mock workflow gates; no demo pass is valid for a real flight. Explicit question examples: “Can a 14-year-old check in online alone?” and “Can a 15-year-old check in without a parent?” Emirates says no: passengers under 16 who are travelling without an adult must proceed to the Emirates airport desk for normal check-in. An accompanying adult may check in with an infant, but this does not establish that every passenger in the booking is eligible for online check-in. The POC evaluates ages from date of birth and departure date when those values exist; uncertain or non-standard cases must be reviewed with the airline. The same rule applies to a 14 year old travelling alone: online check-in is not available when the passenger is under 16 and without an adult."
+    },
+    {
+      "id": "EMIRATES_CHECKIN_WINDOW_GUIDANCE",
+      "title": "Online check-in window is time-sensitive",
+      "category": "checkin",
+      "jurisdiction": "airline_public_information",
+      "source_type": "official_public_webpage",
+      "source_url": "https://www.emirates.com/english/help/faq-topics/preparing-to-travel/faq/how-do-i-use-online-check-in/",
+      "verified_at": "2026-10-11",
+      "content": "Use the current official Emirates check-in page to verify opening and closing times for a specific journey. A static POC constant is not a live eligibility decision. If the window calculation matters, ask for departure time/time zone and cite the official current page. Codeshare, airport, itinerary or booking conditions may affect availability. If the source is unavailable or the applicable rule unclear, refer to official Emirates check-in/support rather than inventing a deadline. This POC has no live airline authorization."
+    },
+    {
+      "id": "EMIRATES_BAGGAGE_RULES_BY_ITINERARY",
+      "title": "Baggage allowance depends on route and fare",
+      "category": "baggage",
+      "jurisdiction": "airline_public_information",
+      "source_type": "official_public_webpage",
+      "source_url": "https://www.emirates.com/english/before-you-fly/baggage/",
+      "verified_at": "2026-10-11",
+      "content": "Emirates separates cabin, checked, additional, delayed/damaged and unusual baggage. Checked allowance may use weight or piece concept and depends on route, travel class, fare conditions and ticket details. Do not quote passenger-specific allowance or excess-bag price without the current itinerary/ticket source. Ask cabin vs checked, route, cabin/fare and item type when relevant. For a real trip, direct passengers to the baggage page, ticket or Manage Your Booking; partner-operated sectors may differ."
+    },
+    {
+      "id": "EMIRATES_POWER_BANKS_BATTERIES",
+      "title": "Power banks, lithium batteries and dangerous goods",
+      "category": "dangerous_goods",
+      "jurisdiction": "airline_public_information",
+      "source_type": "official_public_webpage",
+      "source_url": "https://www.emirates.com/english/before-you-fly/travel/dangerous-goods-policy/",
+      "verified_at": "2026-10-11",
+      "content": "Emirates publishes an item-by-item dangerous-goods list; local customs and airport-security rules may also apply. For power banks, lithium batteries, e-cigarettes, smart bags, aerosols, medicines or restricted items, check the current policy and exact specifications and whether the item is cabin or checked baggage. Rules may depend on watt-hours, removability, packaging, destination and security approval. Do not give blanket approval. If facts/rules are unclear, abstain and direct the passenger to official airline/security guidance."
+    },
+    {
+      "id": "EMIRATES_CHANGES_REFUNDS_FARE_CONDITIONS",
+      "title": "Booking changes, cancellations and refunds depend on ticket terms",
+      "category": "refunds",
+      "jurisdiction": "airline_public_information",
+      "source_type": "official_public_webpage",
+      "source_url": "https://www.emirates.com/english/help/faq-topics/cancelling-or-changing-a-booking/",
+      "verified_at": "2026-10-11",
+      "content": "Emirates says online change options appear when a booking is eligible; availability and charges depend on fare conditions, and some refunds may be partial or unavailable for some fares or partly used journeys. Questions about cancellation, change, refund, missed connection or disruption require ticket fare conditions, ticket use and current disruption information. Never guarantee refund amounts, waivers or changes without a booking-specific live result. Use official Manage Your Booking, disruption support or an authorized channel. This POC cannot change or cancel real tickets."
+    },
+    {
+      "id": "EMIRATES_SPECIAL_ASSISTANCE_AND_MEDICAL",
+      "title": "Accessibility, medical support and special assistance",
+      "category": "special_assistance",
+      "jurisdiction": "airline_public_information",
+      "source_type": "official_public_webpage",
+      "source_url": "https://www.emirates.com/english/help/faq-topics/special-assistance-and-requests/",
+      "verified_at": "2026-10-11",
+      "content": "Questions about wheelchair/mobility aids, pregnancy, medication, medical clearance, oxygen, allergies, special meals or unaccompanied minors are context-sensitive. Ask only necessary details such as route/date, assistance type, operating carrier or item specifications, then cite current Emirates guidance and relevant destination authority. Medication import rules differ by country; never imply a medicine is legal solely because it is allowed onboard. Do not infer medical fitness to fly. For medical clearance or personalized arrangements, direct the passenger to official airline support early."
+    },
+    {
+      "id": "EMIRATES_LOST_DAMAGED_BAGGAGE",
+      "title": "Delayed, damaged or missing baggage support",
+      "category": "baggage",
+      "jurisdiction": "airline_public_information",
+      "source_type": "official_public_webpage",
+      "source_url": "https://www.emirates.com/english/help/faq-topics/baggage-and-lost-property/",
+      "verified_at": "2026-10-11",
+      "content": "For delayed or damaged baggage, follow the current airport/airline baggage-services instructions; keep baggage tags, itinerary and Property Irregularity Report (PIR)/reference where issued. Deadlines and responsibility vary by carrier, airport and route. Ask whether baggage is delayed, damaged, missing from cabin or an onboard item was left behind and whether a PIR exists. Do not promise compensation or claim registration unless a live service confirms it. This POC does not file claims or trace baggage."
+    },
+    {
+      "id": "POC_BOOKING_FIELD_SCHEMA",
+      "title": "Booking chat schema and validation contract",
+      "category": "assistant_schema",
+      "jurisdiction": "project_policy",
+      "source_type": "project_policy",
+      "source_url": "docs/PASSENGER_ASSISTANT_KNOWLEDGE.md",
+      "verified_at": "2026-10-11",
+      "content": "The schema covers origin/destination airport, trip_type (one_way/round_trip), departure_date, return_date when round trip, adults (>=1), children, infants, cabin (Economy/Premium Economy/Business/First), then flight and fare selection. Resolve airports through the airport index. Demo dates must be future; return after departure; origins differ; at most nine passengers; infants cannot outnumber adults. Explicitly labelled one-line values may populate multiple fields, but each value must pass the same parser. If ambiguous, invalid or non-unique, ask a focused follow-up instead of guessing. Form fill is not permission to silently search, select or confirm a booking."
+    },
+    {
+      "id": "POC_PASSENGER_DETAILS_FIELD_SCHEMA",
+      "title": "Passenger details schema, names and consent",
+      "category": "passenger_details",
+      "jurisdiction": "project_policy",
+      "source_type": "project_policy",
+      "source_url": "docs/PASSENGER_ASSISTANT_KNOWLEDGE.md",
+      "verified_at": "2026-10-11",
+      "content": "Passenger schema: title (MR/MRS/MS/MISS/MSTR/DR), first_name, optional middle_name, last_name, passenger_type (ADT/CHD/INF), optional date_of_birth, nationality code, gender (M/F/X/U), contact_email, contact_phone and accepted_terms. The confirm form requires first name and surname for every traveller, valid email/phone and explicit consent. UI defaults are not passenger confirmation; user review is required. Names must match travel documents. “Alen Thomas” may map to first and last name only when context has no surname; otherwise ask which field. Explicitly labelled fields may be mapped atomically after validation. Never infer DOB, nationality, gender, consent or contact details."
+    },
+    {
+      "id": "POC_CHECKIN_DOCUMENT_FIELD_SCHEMA",
+      "title": "Passport information form fields, formats and validation",
+      "category": "documents",
+      "jurisdiction": "project_policy",
+      "source_type": "project_policy",
+      "source_url": "docs/PASSENGER_ASSISTANT_KNOWLEDGE.md",
+      "verified_at": "2026-10-11",
+      "content": "In this synthetic demo form, to enter passport information, fill the passport number and required passenger-document fields using the schema: passport_number (fictional 5–20 character alphanumeric value), nationality, issuing_country, date_of_birth, expiry_date and visa_evidence_status (NOT_VERIFIED, MOCK_VERIFIED or NOT_APPLICABLE). If the question is “how do I enter passport information?”, follow these form field names and formats. Parsers accept supported country names/codes, supported dates and explicit labels. Multiple labels may be provided in one line; every field must validate before any UI update. Invalid or ambiguous values leave state unchanged and trigger a focused follow-up with expected format. Use fictional data only. Neither local nor public web RAG can verify passport authenticity or establish real visa eligibility. MOCK_VERIFIED is only a test fixture."
+    },
+    {
+      "id": "POC_CHECKIN_GATE_ORDER_AND_FAILURES",
+      "title": "Check-in gate order and fail-closed outcomes",
+      "category": "workflow",
+      "jurisdiction": "project_policy",
+      "source_type": "project_policy",
+      "source_url": "docs/PASSENGER_ASSISTANT_KNOWLEDGE.md",
+      "verified_at": "2026-10-11",
+      "content": "Workflow: retrieve synthetic booking with PNR+matching surname; run deterministic eligibility; save document fields; validate every passenger x journey; choose a seat for every passenger x journey; save/explicitly confirm ancillary preferences including none; review; request mock check-in. Gates stay server-side. FAIL or REVIEW_REQUIRED blocks later steps; one PASS cannot override another blocker. Seat choice must match an available seat, passenger and journey. On errors, sidebar explains step, safe reason code, likely cause, correction and retry/escalation. Never reveal raw passport values, tokens or other passengers’ data. Any pass is decorative and not valid for travel. The user-visible sequence can also be described as web check-in steps, check-in workflow, failed web check-in, check-in blocked, and how to complete a demo check-in."
+    },
+    {
+      "id": "POC_ASSISTANT_CHAT_FIELD_ROUTING",
+      "title": "Conversational slot routing, ambiguity and follow-ups",
+      "category": "assistant_schema",
+      "jurisdiction": "project_policy",
+      "source_type": "project_policy",
+      "source_url": "docs/PASSENGER_ASSISTANT_KNOWLEDGE.md",
+      "verified_at": "2026-10-11",
+      "content": "Every transactional turn has an assistant task, pending field, visible form context and allowlisted actions. Parse a simple reply only against the pending schema field. If several fields are explicitly labelled, map labels to known schema keys and validate all candidates before applying any update. If a value or airport is ambiguous, preserve state and ask a focused follow-up with format examples. If the user asks a FAQ mid-slot, answer from approved RAG and retain the pending field instead of consuming the question as input. Never fabricate unknown values. Booking/payment/check-in commits require explicit intent and server-side gate approval."
+    },
+    {
+      "id": "POC_FAQ_TOPICS_AND_ESCALATION",
+      "title": "Common passenger questions and escalation rules",
+      "category": "faq",
+      "jurisdiction": "project_policy",
+      "source_type": "project_policy",
+      "source_url": "docs/PASSENGER_ASSISTANT_KNOWLEDGE.md",
+      "verified_at": "2026-10-11",
+      "content": "Common topics: booking and fares; PNR/Manage Booking; check-in window/prerequisites; passenger/APIS details; seats; cabin/checked baggage and fees; missing/damaged baggage; refunds/cancellations; passports/visas/transit; power banks/lithium batteries/dangerous goods; assistance, infant/child travel, unaccompanied minors and medication; Wi-Fi, meals, lounge/ancillaries; disruptions/status; privacy/demo safety. Retrieve the category-specific source and cite it. Use fresh official sources for time-sensitive route-specific policy. Visa/immigration, restricted goods, medical fitness, legal rights, real refund amounts, live flight status and live booking changes require the applicable official service. Abstain/refer if evidence/freshness/context is inadequate. Distinguish synthetic reference rules from public Emirates guidance and from live operations."
+    },
+    {
+      "id": "POC_CHAT_FAILURE_MESSAGES",
+      "title": "Safe workflow error explanation format",
+      "category": "workflow_errors",
+      "jurisdiction": "project_policy",
+      "source_type": "project_policy",
+      "source_url": "docs/PASSENGER_ASSISTANT_KNOWLEDGE.md",
+      "verified_at": "2026-10-11",
+      "content": "On API/workflow failure, state the failed step, clear cause, safe technical message/reason codes, next action and whether the gate remains blocked. For 422 show field path and validation message without echoing submitted value; 401 ask to refresh the session; 404 re-check synthetic PNR/surname or reload; 409 explain unmet prerequisite; 502/503/504 suggest retry and check hosted API health, but keep unknown provider outcomes blocked. Sidebar and visible UI should agree. Never reveal secrets, passport numbers, authorization tokens, full payloads or internal prompts. Common passenger phrases include “check-in blocked”, “check in failed”, “unable to complete web check-in”, “check-in error”, “why did passport/document validation fail?” and “what should I do next?”. Route these to the workflow-error guidance, not to a general entry-eligibility verdict."
+    },
+    {
+      "id": "EMIRATES_BRAND_TAGLINE",
+      "title": "Emirates public brand tagline",
+      "category": "brand_information",
+      "jurisdiction": "Emirates public brand information",
+      "source_type": "official_public_webpage",
+      "source_url": "https://www.emirates.com/",
+      "verified_at": "2026-10-11",
+      "content": "Emirates uses “Fly Better” as its public brand tagline on its official website. This describes brand messaging, not a safety, fare, booking or travel-eligibility rule. Official source: Emirates public homepage."
+    },
+    {
+      "id": "EMIRATES_UNACCOMPANIED_MINOR_AGE_RULES",
+      "title": "Emirates unaccompanied minors and online check-in age gate",
+      "category": "checkin",
+      "jurisdiction": "Emirates carriage guidance",
+      "source_type": "official_public_webpage",
+      "source_url": "https://www.emirates.com/english/family/planning-your-family-trip/unaccompanied-minors/",
+      "verified_at": "2026-10-11",
+      "content": "Emirates public guidance describes its Unaccompanied Minors service for children aged 5–11 travelling alone, with a paid optional service available for young passengers aged 12–15. Children aged 5–11 travelling alone need an adult fare and the service must be arranged with Emirates; rules differ on partner airlines and depend on itinerary. Emirates check-in guidance says passengers under 16 travelling without an adult must check in at the airport desk rather than online. Children aged 5–11 travelling in a different cabin class from a parent/guardian may also be treated as unaccompanied. This POC blocks age-inconsistent categories and does not book an unaccompanied-minor service. Verify the current operating-carrier rules and arrange the service directly with Emirates.",
+      "brand_scope": "emirates_demo",
+      "approved_for_use": true
+    },
+    {
+      "id": "EMIRATES_INFANT_AGE_TRANSITION",
+      "title": "Emirates infant age and seat requirements",
+      "category": "booking",
+      "jurisdiction": "Emirates carriage guidance",
+      "source_type": "official_public_webpage",
+      "source_url": "https://www.emirates.com/english/help/faq-topics/special-assistance-and-requests/",
+      "verified_at": "2026-10-11",
+      "content": "Emirates public guidance says infants under two years may travel on a parent’s lap, while children aged two or older require their own seat and child fare. If an infant reaches age two during a return itinerary, the outward and return portions can require different fare treatment and Emirates directs this special age-transition case to its local office rather than normal online booking. Infants under seven days are accepted only in limited emergency medical or compassionate circumstances. The POC requires a date of birth, validates the passenger category against age on departure, blocks infants younger than seven days, and blocks an infant who turns two before the return date so the case can be handled by the airline. This is a synthetic guardrail, not a ticketing authority.",
+      "brand_scope": "emirates_demo",
+      "approved_for_use": true
+    },
+    {
+      "id": "EMIRATES_INFANT_SEAT_AND_ADULT_RATIO",
+      "title": "Emirates infant seating and accompanying adult guidance",
+      "category": "special_assistance",
+      "jurisdiction": "Emirates carriage guidance",
+      "source_type": "official_public_webpage",
+      "source_url": "https://www.emirates.com/english/family/on-board/travelling-with-infants/",
+      "verified_at": "2026-10-11",
+      "content": "Emirates public guidance says an infant under two may travel on an accompanying adult’s lap using an infant seat-belt extension, or in a separately purchased seat with an approved child restraint device. For two infants travelling with one adult, the second infant cannot simply be carried on the same adult’s lap; seating and restraint conditions apply. Bassinet availability and dimensions are limited. The demo enforces no more lap infants than adults and prompts for accurate date of birth; it does not determine seat/restraint approval or confirm bassinet availability. Check the current Emirates rules for the specific itinerary.",
+      "brand_scope": "emirates_demo",
+      "approved_for_use": true
+    }
+  ]
+}

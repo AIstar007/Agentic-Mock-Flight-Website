@@ -1,0 +1,44 @@
+name: POC CI
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  backend:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: backend/requirements.txt
+      - name: Install dependencies
+        working-directory: backend
+        run: python -m pip install -r requirements.txt
+      - name: Test API and deterministic rules
+        working-directory: backend
+        run: python -m pytest -q
+      - name: Dependency vulnerability audit
+        working-directory: backend
+        run: |
+          python -m pip install pip-audit
+          pip-audit -r requirements.txt
+  frontend:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install dependencies
+        working-directory: frontend
+        run: npm install
+      - name: Build frontend
+        working-directory: frontend
+        run: npm run build
+      - name: Frontend dependency vulnerability audit
+        working-directory: frontend
+        run: npm audit --audit-level=high

@@ -1,0 +1,76 @@
+name: emirates-checkin-poc
+services:
+  backend:
+    build: ./backend
+    environment:
+      MOCK_MODE: "true"
+      APP_ENV: development
+      FRONTEND_ORIGIN: http://localhost:5173
+      SESSION_TTL_SECONDS: "604800"
+      AUDIT_TTL_SECONDS: "604800"
+      RATE_LIMIT_PER_MINUTE: "120"
+      LANGGRAPH_STRICT_MSGPACK: "true"
+      # Optional adapters are OFF by default. Configure these only for local, authorized testing.
+      REDIS_URL: ${REDIS_URL:-}
+      LANGGRAPH_REDIS_URL: ${LANGGRAPH_REDIS_URL:-${REDIS_URL:-}}
+      MONGODB_URI: ${MONGODB_URI:-}
+      MONGODB_DATABASE: ${MONGODB_DATABASE:-emirates_checkin_demo}
+      NEO4J_URI: ${NEO4J_URI:-}
+      NEO4J_USERNAME: ${NEO4J_USERNAME:-neo4j}
+      NEO4J_PASSWORD: ${NEO4J_PASSWORD:-local-demo-password-change-me}
+      ENABLE_PROVIDER_DIAGNOSTICS: ${ENABLE_PROVIDER_DIAGNOSTICS:-false}
+      PROVIDER_DIAGNOSTICS_TOKEN: ${PROVIDER_DIAGNOSTICS_TOKEN:-}
+      PROVIDER_HTTP_TIMEOUT_SECONDS: ${PROVIDER_HTTP_TIMEOUT_SECONDS:-15}
+      NAVITAIRE_BASE_URL: ${NAVITAIRE_BASE_URL:-}
+      NAVITAIRE_BOOKING_RETRIEVE_PATH: ${NAVITAIRE_BOOKING_RETRIEVE_PATH:-/api/v2/graph/BookingRetrieve}
+      NAVITAIRE_API_KEY: ${NAVITAIRE_API_KEY:-}
+      NAVITAIRE_API_KEY_HEADER: ${NAVITAIRE_API_KEY_HEADER:-}
+      NAVITAIRE_AGENT_TOKEN: ${NAVITAIRE_AGENT_TOKEN:-}
+      NAVITAIRE_USER_KEY: ${NAVITAIRE_USER_KEY:-}
+      NAVITAIRE_AUTH_SCHEME: ${NAVITAIRE_AUTH_SCHEME:-raw}
+      TIMATIC_TOKEN_URL: ${TIMATIC_TOKEN_URL:-https://staging.timatic.iata.org/security-token-service/oauth2/token}
+      TIMATIC_BASE_URL: ${TIMATIC_BASE_URL:-https://staging.timatic.iata.org/query-interface-service/api/v1}
+      TIMATIC_USERNAME: ${TIMATIC_USERNAME:-}
+      TIMATIC_PASSWORD: ${TIMATIC_PASSWORD:-}
+      TIMATIC_GRANT_TYPE: ${TIMATIC_GRANT_TYPE:-client_credentials}
+    ports: ["127.0.0.1:8000:8000"]
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/api/v1/health')"]
+      interval: 20s
+      timeout: 4s
+      retries: 3
+    restart: unless-stopped
+  frontend:
+    build: ./frontend
+    environment:
+      VITE_API_BASE_URL: http://localhost:8000
+    ports: ["127.0.0.1:5173:5173"]
+    depends_on:
+      backend:
+        condition: service_healthy
+    restart: unless-stopped
+  redis:
+    image: redis:8.10.2-alpine
+    profiles: ["stateful"]
+    command: ["redis-server", "--appendonly", "yes", "--appendfsync", "everysec"]
+    ports: ["127.0.0.1:6379:6379"]
+    volumes: ["redis-data:/data"]
+    restart: unless-stopped
+  mongo:
+    image: mongo:8.0
+    profiles: ["stateful"]
+    ports: ["127.0.0.1:27017:27017"]
+    volumes: ["mongo-data:/data/db"]
+    restart: unless-stopped
+  neo4j:
+    image: neo4j:5-community
+    profiles: ["graph"]
+    environment:
+      NEO4J_AUTH: neo4j/${NEO4J_PASSWORD:-local-demo-password-change-me}
+    ports: ["127.0.0.1:7474:7474", "127.0.0.1:7687:7687"]
+    volumes: ["neo4j-data:/data"]
+    restart: unless-stopped
+volumes:
+  redis-data:
+  mongo-data:
+  neo4j-data:

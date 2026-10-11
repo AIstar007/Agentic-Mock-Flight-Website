@@ -1,0 +1,13 @@
+.env
+.env.*
+!.env.example
+**/.venv/
+**/__pycache__/
+**/.pytest_cache/
+**/node_modules/
+**/dist/
+*.py[cod]
+.DS_Store
+
+# Local versioned FAQ corpus database (recreated from approved seed documents)
+*.sqlite3

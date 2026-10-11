@@ -1,0 +1,14 @@
+{
+  "rules": [
+    {"rule_id":"BOOKING_CONFIRMED","name":"Booking must be confirmed","source_type":"reference_derived_mock_policy","source_file":"DomesticCodified / release 1.0.7","severity":"BLOCK","emirates_status":"must be confirmed by airline owner"},
+    {"rule_id":"PAYMENT_COMPLETE","name":"Payment is complete and balance due is zero","source_type":"reference_derived_mock_policy","source_file":"DomesticCodified / release 1.0.7","severity":"BLOCK","emirates_status":"must be confirmed by airline owner"},
+    {"rule_id":"JOURNEY_PRESENT","name":"At least one journey and segment exist","source_type":"reference_derived_mock_policy","source_file":"DomesticCodified / release 1.0.7","severity":"BLOCK","emirates_status":"generic structural requirement"},
+    {"rule_id":"PASSENGER_NAME_COMPLETE","name":"Required passenger name fields are present","source_type":"reference_derived_mock_policy","source_file":"DomesticCodified / release 1.0.7","severity":"BLOCK","emirates_status":"field length constraints must be confirmed"},
+    {"rule_id":"ADULT_ACCOMPANIMENT","name":"Adult required for reference minor rule","source_type":"reference_derived_mock_policy","source_file":"DomesticCodified / release 1.0.7","severity":"BLOCK","emirates_status":"do not treat as universal legal or airline rule"},
+    {"rule_id":"CODESHARE_RESTRICTION","name":"Codeshare restriction in the reference workflow","source_type":"reference_derived_mock_policy","source_file":"DomesticCodified / release 1.0.7","severity":"BLOCK","emirates_status":"synthetic EK-only demo rule; must be confirmed before any Emirates use"},
+    {"rule_id":"QUEUE_EMPTY","name":"Booking must not be queued","source_type":"reference_derived_mock_policy","source_file":"DomesticCodified / release 1.0.7","severity":"BLOCK","emirates_status":"must be confirmed by airline owner"},
+    {"rule_id":"SSR_REQUIREMENTS_VALID","name":"Special service request requirements must be valid","source_type":"reference_derived_mock_policy","source_file":"release 1.0.7","severity":"BLOCK","emirates_status":"requires provider/airline semantics"},
+    {"rule_id":"CHECKIN_WINDOW","name":"Check-in occurs inside configured window","source_type":"official_public_reference_plus_mock","source_url":"https://www.emirates.com/english/help/faq-topics/preparing-to-travel/faq/how-do-i-use-online-check-in/","severity":"BLOCK","emirates_status":"public summary used only in mock; authoritative provider check required"},
+    {"rule_id":"TIMATIC_REVIEW_GATE","name":"Unknown or unverified international document case must be escalated","source_type":"POC_SAFETY_POLICY","source_file":"SECURITY_GOVERNANCE.md","severity":"BLOCK","emirates_status":"must not be bypassed by an agent"}
+  ]
+}

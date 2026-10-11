@@ -1,0 +1,9 @@
+# Keep developer secrets and local caches out of the backend image build context.
+.env
+.env.*
+!.env.example
+.venv
+__pycache__
+.pytest_cache
+*.py[cod]
+tests

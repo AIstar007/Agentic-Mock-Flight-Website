@@ -1,0 +1,7 @@
+# Vite bundles must not accidentally ingest developer-local environment files.
+.env
+.env.*
+!.env.example
+node_modules
+dist
+.git

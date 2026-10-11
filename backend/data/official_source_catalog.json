@@ -1,0 +1,313 @@
+{
+  "description": "Curated starting directory of official aviation and government sources for the Emirates-inspired demo. This is a source directory, not a claim to cover all countries or every rule. Import/review documents by jurisdiction and effective date before using them for policy answers.",
+  "sources": [
+    {
+      "id": "emirates_travel_requirements",
+      "title": "Emirates passport, visa and travel requirements",
+      "url": "https://www.emirates.com/english/before-you-fly/visa-passport-information/",
+      "jurisdiction": "Emirates carriage guidance",
+      "scope": "airline"
+    },
+    {
+      "id": "emirates_checkin",
+      "title": "Emirates online check-in",
+      "url": "https://www.emirates.com/english/help/faq-topics/preparing-to-travel/faq/how-do-i-use-online-check-in/",
+      "jurisdiction": "Emirates operations",
+      "scope": "airline"
+    },
+    {
+      "id": "emirates_baggage",
+      "title": "Emirates baggage",
+      "url": "https://www.emirates.com/english/before-you-fly/baggage/",
+      "jurisdiction": "Emirates carriage guidance",
+      "scope": "airline"
+    },
+    {
+      "id": "emirates_dangerous_goods",
+      "title": "Emirates dangerous goods",
+      "url": "https://www.emirates.com/english/before-you-fly/travel/dangerous-goods-policy/",
+      "jurisdiction": "Emirates carriage guidance",
+      "scope": "airline"
+    },
+    {
+      "id": "emirates_refunds",
+      "title": "Emirates booking changes and cancellations",
+      "url": "https://www.emirates.com/english/help/faq-topics/cancelling-or-changing-a-booking/",
+      "jurisdiction": "Emirates carriage guidance",
+      "scope": "airline"
+    },
+    {
+      "id": "iata_travel_centre",
+      "title": "IATA Travel Centre",
+      "url": "https://www.iata.org/en/travel-centre/",
+      "jurisdiction": "International travel documentation",
+      "scope": "international"
+    },
+    {
+      "id": "iata_timatic",
+      "title": "IATA Timatic AutoCheck",
+      "url": "https://www.iata.org/en/services/compliance/timatic/autocheck/",
+      "jurisdiction": "International travel documentation",
+      "scope": "international"
+    },
+    {
+      "id": "icao_annex9_facilitation",
+      "title": "ICAO Facilitation",
+      "url": "https://www.icao.int/Security/FAL/Pages/Annex9.aspx",
+      "jurisdiction": "International standards; national implementation varies",
+      "scope": "international"
+    },
+    {
+      "id": "icao_safety",
+      "title": "ICAO safety",
+      "url": "https://www.icao.int/safety/Pages/default.aspx",
+      "jurisdiction": "International standards; national implementation varies",
+      "scope": "international"
+    },
+    {
+      "id": "icao_dangerous_goods",
+      "title": "ICAO dangerous goods by air",
+      "url": "https://www.icao.int/safety/DangerousGoods/Pages/default.aspx",
+      "jurisdiction": "International standards; national implementation varies",
+      "scope": "international"
+    },
+    {
+      "id": "iata_dgr",
+      "title": "IATA dangerous goods guidance",
+      "url": "https://www.iata.org/en/programs/cargo/dgr/",
+      "jurisdiction": "International industry guidance",
+      "scope": "international"
+    },
+    {
+      "id": "iata_passenger_baggage",
+      "title": "IATA passenger baggage guidance",
+      "url": "https://www.iata.org/en/programs/ops-infra/baggage/",
+      "jurisdiction": "International industry guidance",
+      "scope": "international"
+    },
+    {
+      "id": "uae_gcaa",
+      "title": "UAE General Civil Aviation Authority",
+      "url": "https://www.gcaa.gov.ae/",
+      "jurisdiction": "United Arab Emirates",
+      "scope": "national_regulator"
+    },
+    {
+      "id": "uae_immigration",
+      "title": "UAE government portal",
+      "url": "https://u.ae/en/information-and-services/visa-and-emirates-id",
+      "jurisdiction": "United Arab Emirates",
+      "scope": "government"
+    },
+    {
+      "id": "india_dgca",
+      "title": "India Directorate General of Civil Aviation",
+      "url": "https://www.dgca.gov.in/",
+      "jurisdiction": "India",
+      "scope": "national_regulator"
+    },
+    {
+      "id": "india_mha",
+      "title": "India Bureau of Immigration",
+      "url": "https://boi.gov.in/",
+      "jurisdiction": "India",
+      "scope": "government"
+    },
+    {
+      "id": "india_mo_civil_aviation",
+      "title": "India Ministry of Civil Aviation",
+      "url": "https://www.civilaviation.gov.in/",
+      "jurisdiction": "India",
+      "scope": "national_regulator"
+    },
+    {
+      "id": "us_faa",
+      "title": "United States Federal Aviation Administration",
+      "url": "https://www.faa.gov/",
+      "jurisdiction": "United States",
+      "scope": "national_regulator"
+    },
+    {
+      "id": "us_tsa",
+      "title": "United States Transportation Security Administration",
+      "url": "https://www.tsa.gov/travel",
+      "jurisdiction": "United States",
+      "scope": "government"
+    },
+    {
+      "id": "us_state_visas",
+      "title": "US Department of State travel",
+      "url": "https://travel.state.gov/content/travel/en/international-travel.html",
+      "jurisdiction": "United States and destination-country travel information",
+      "scope": "government"
+    },
+    {
+      "id": "uk_caa",
+      "title": "United Kingdom Civil Aviation Authority",
+      "url": "https://www.caa.co.uk/",
+      "jurisdiction": "United Kingdom",
+      "scope": "national_regulator"
+    },
+    {
+      "id": "uk_fcdO",
+      "title": "UK Foreign travel advice",
+      "url": "https://www.gov.uk/foreign-travel-advice",
+      "jurisdiction": "United Kingdom / destination-specific advice",
+      "scope": "government"
+    },
+    {
+      "id": "eu_easa",
+      "title": "European Union Aviation Safety Agency",
+      "url": "https://www.easa.europa.eu/",
+      "jurisdiction": "European Union and associated states",
+      "scope": "regional_regulator"
+    },
+    {
+      "id": "eu_your_europe",
+      "title": "EU air passenger rights",
+      "url": "https://europa.eu/youreurope/citizens/travel/passenger-rights/air/index_en.htm",
+      "jurisdiction": "European Union; applicability depends on route and circumstances",
+      "scope": "regional_law"
+    },
+    {
+      "id": "canada_tcca",
+      "title": "Transport Canada Civil Aviation",
+      "url": "https://tc.canada.ca/en/aviation",
+      "jurisdiction": "Canada",
+      "scope": "national_regulator"
+    },
+    {
+      "id": "canada_travel",
+      "title": "Government of Canada travel advice",
+      "url": "https://travel.gc.ca/",
+      "jurisdiction": "Canada / destination-specific advice",
+      "scope": "government"
+    },
+    {
+      "id": "australia_casa",
+      "title": "Civil Aviation Safety Authority Australia",
+      "url": "https://www.casa.gov.au/",
+      "jurisdiction": "Australia",
+      "scope": "national_regulator"
+    },
+    {
+      "id": "australia_smartraveller",
+      "title": "Australia Smartraveller",
+      "url": "https://www.smartraveller.gov.au/",
+      "jurisdiction": "Australia / destination-specific advice",
+      "scope": "government"
+    },
+    {
+      "id": "new_zealand_caa",
+      "title": "Civil Aviation Authority New Zealand",
+      "url": "https://www.aviation.govt.nz/",
+      "jurisdiction": "New Zealand",
+      "scope": "national_regulator"
+    },
+    {
+      "id": "singapore_caas",
+      "title": "Civil Aviation Authority of Singapore",
+      "url": "https://www.caas.gov.sg/",
+      "jurisdiction": "Singapore",
+      "scope": "national_regulator"
+    },
+    {
+      "id": "singapore_ica",
+      "title": "Singapore Immigration and Checkpoints Authority",
+      "url": "https://www.ica.gov.sg/enter-transit-depart",
+      "jurisdiction": "Singapore",
+      "scope": "government"
+    },
+    {
+      "id": "qatar_caa",
+      "title": "Qatar Civil Aviation Authority",
+      "url": "https://www.caa.gov.qa/",
+      "jurisdiction": "Qatar",
+      "scope": "national_regulator"
+    },
+    {
+      "id": "turkey_caa",
+      "title": "Türkiye Directorate General of Civil Aviation",
+      "url": "https://web.shgm.gov.tr/",
+      "jurisdiction": "Türkiye",
+      "scope": "national_regulator"
+    },
+    {
+      "id": "japan_mlitt",
+      "title": "Japan Civil Aviation Bureau / MLIT",
+      "url": "https://www.mlit.go.jp/en/",
+      "jurisdiction": "Japan",
+      "scope": "national_regulator"
+    },
+    {
+      "id": "china_caac",
+      "title": "Civil Aviation Administration of China",
+      "url": "https://www.caac.gov.cn/English/",
+      "jurisdiction": "China",
+      "scope": "national_regulator"
+    },
+    {
+      "id": "south_africa_caa",
+      "title": "South African Civil Aviation Authority",
+      "url": "https://www.caa.co.za/",
+      "jurisdiction": "South Africa",
+      "scope": "national_regulator"
+    },
+    {
+      "id": "brazil_anac",
+      "title": "Brazil National Civil Aviation Agency",
+      "url": "https://www.gov.br/anac/pt-br",
+      "jurisdiction": "Brazil",
+      "scope": "national_regulator"
+    },
+    {
+      "id": "mexico_afac",
+      "title": "Mexico Federal Civil Aviation Agency",
+      "url": "https://www.gob.mx/afac",
+      "jurisdiction": "Mexico",
+      "scope": "national_regulator"
+    },
+    {
+      "id": "saudi_gaca",
+      "title": "Saudi General Authority of Civil Aviation",
+      "url": "https://gaca.gov.sa/",
+      "jurisdiction": "Saudi Arabia",
+      "scope": "national_regulator"
+    },
+    {
+      "id": "france_service_public",
+      "title": "France official public service",
+      "url": "https://www.service-public.fr/",
+      "jurisdiction": "France",
+      "scope": "government"
+    },
+    {
+      "id": "germany_lba",
+      "title": "German Federal Aviation Office",
+      "url": "https://www.lba.de/EN/Home/home_node.html",
+      "jurisdiction": "Germany",
+      "scope": "national_regulator"
+    },
+    {
+      "id": "emirates_unaccompanied_minors",
+      "title": "Emirates unaccompanied minors",
+      "url": "https://www.emirates.com/english/family/planning-your-family-trip/unaccompanied-minors/",
+      "jurisdiction": "Emirates carriage guidance",
+      "scope": "airline"
+    },
+    {
+      "id": "emirates_infants",
+      "title": "Emirates travelling with infants",
+      "url": "https://www.emirates.com/english/family/on-board/travelling-with-infants/",
+      "jurisdiction": "Emirates carriage guidance",
+      "scope": "airline"
+    },
+    {
+      "id": "emirates_family_faq",
+      "title": "Emirates child and infant ticketing and travel FAQ",
+      "url": "https://www.emirates.com/english/help/faq-topics/special-assistance-and-requests/",
+      "jurisdiction": "Emirates carriage guidance",
+      "scope": "airline"
+    }
+  ]
+}

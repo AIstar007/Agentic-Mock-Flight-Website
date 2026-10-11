@@ -1,0 +1,51 @@
+services:
+  - type: web
+    name: emirates-checkin-api
+    runtime: python
+    plan: free
+    region: singapore
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /api/v1/health
+    autoDeploy: true
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.11
+      - key: APP_ENV
+        value: production
+      - key: MOCK_MODE
+        value: "true"
+      - key: REQUIRE_PERSISTENT_STORAGE
+        value: "true"
+      - key: FRONTEND_ORIGIN
+        value: https://emirates-checkin-demo.onrender.com
+      - key: SESSION_TTL_SECONDS
+        value: "604800"
+      - key: AUDIT_TTL_SECONDS
+        value: "604800"
+      - key: RATE_LIMIT_PER_MINUTE
+        value: "120"
+      - key: LANGGRAPH_STRICT_MSGPACK
+        value: "true"
+      # Redis is optional. The free-hosted profile uses MongoDB Atlas for sessions and graph checkpoints.
+      - key: MONGODB_URI
+        sync: false
+      - key: MONGODB_DATABASE
+        value: emirates_checkin_demo
+      - key: NEO4J_REQUIRED
+        value: "false"
+
+  - type: web
+    runtime: static
+    name: emirates-checkin-demo
+    rootDir: frontend
+    buildCommand: npm install && npm run build
+    staticPublishPath: dist
+    autoDeploy: true
+    envVars:
+      - key: VITE_API_BASE_URL
+        fromService:
+          type: web
+          name: emirates-checkin-api
+          envVarKey: RENDER_EXTERNAL_URL
