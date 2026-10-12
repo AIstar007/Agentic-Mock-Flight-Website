@@ -13,8 +13,5 @@ python-dotenv>=1.1.0,<2.0.0
 pytest>=8.4.0,<10.0.0
 pytest-asyncio>=1.2.0,<2.0.0
 
-# Optional local semantic vector retrieval; lexical/SQLite retrieval still works without it.
--r app/requirements_chroma.txt
-
 # ISO-3166 alpha-2/alpha-3 country-code validation for assistant and document forms.
 pycountry>=24.6.1,<27.0.0
