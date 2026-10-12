@@ -19,7 +19,7 @@ services:
       - key: REQUIRE_PERSISTENT_STORAGE
         value: "true"
       - key: FRONTEND_ORIGIN
-        value: https://emirates-checkin-demo.onrender.com
+        value: https://agentic-mock-flight-website-fronten.vercel.app
       - key: SESSION_TTL_SECONDS
         value: "604800"
       - key: AUDIT_TTL_SECONDS
