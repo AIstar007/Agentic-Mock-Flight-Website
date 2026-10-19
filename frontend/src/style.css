@@ -18,3 +18,71 @@ body{background:#f7f5f1!important;color:var(--portal-ink)}
 @media(max-width:960px){.portal-main-layout{grid-template-columns:minmax(0,1fr)}.portal-assistant{position:static;max-height:620px}.portal-assistant-messages{max-height:300px}.portal-nav{gap:11px}.portal-nav button{font-size:11px}.portal-header{gap:20px}.portal-review-layout{grid-template-columns:minmax(0,1fr) 240px}.portal-hero-copy{max-width:66%}}
 @media(max-width:720px){.portal-header{min-height:67px;padding:0 15px;gap:12px}.portal-brand strong{font-size:15px}.portal-brand-mark{width:31px;height:37px;font-size:23px}.portal-mobile-menu{display:grid;place-items:center;margin-left:auto}.portal-header-tools{gap:10px}.portal-header-tools .portal-help-link{display:none}.portal-nav{display:none;position:absolute;top:67px;left:0;right:0;background:white;padding:8px 14px 14px;border-bottom:1px solid var(--portal-line);box-shadow:0 14px 16px #2c1c1911;flex-direction:column;gap:0}.portal-nav.open{display:flex}.portal-nav button{min-height:42px;text-align:left;border-bottom:1px solid #f1ebe6;border-left:3px solid transparent;padding:0 10px}.portal-nav button.active{border-left-color:var(--portal-wine);border-bottom-color:#f1ebe6}.portal-unofficial{font-size:9px;line-height:1.5}.portal-main-layout{padding:14px 10px 24px;gap:15px}.portal-hero{min-height:240px}.portal-hero-copy{padding:24px 20px;max-width:78%}.portal-hero h1{font-size:34px}.portal-hero p{font-size:11px;max-width:280px}.portal-hero-art{width:45%;opacity:.7}.portal-plane-illustration{right:-5%;top:24%}.portal-hero-perks{gap:8px}.portal-hero-perks span{font-size:9px}.portal-card-heading{align-items:flex-start}.portal-card-heading h2{font-size:22px}.portal-mock-pill{font-size:8px}.portal-search-card{padding:18px 14px}.portal-route-grid{grid-template-columns:minmax(0,1fr) 34px minmax(0,1fr);gap:7px}.portal-airport-input{height:47px;padding:0 7px;gap:5px}.portal-airport-input input{font-size:10px}.portal-airport-input>svg{width:14px;flex-shrink:0}.portal-iata-pill{display:none}.portal-swap-route{width:32px;height:32px}.portal-search-fields{grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}.portal-search-submit{align-items:flex-start;flex-direction:column}.portal-search-submit .portal-btn{width:100%}.portal-form-note{display:none}.portal-destination-cards{grid-template-columns:1fr}.portal-destination-card{min-height:120px}.portal-progress{padding:10px 8px;gap:3px}.portal-progress-step{flex-direction:column;gap:5px;text-align:center}.portal-progress-step:not(:last-child):after{left:calc(50% + 15px);right:calc(-50% + 15px);top:12px}.portal-progress-step small{font-size:8px;white-space:normal}.portal-flow-panel{padding:17px 13px}.portal-flow-heading h1{font-size:27px}.portal-search-summary{gap:9px}.portal-flight-card{padding:12px}.portal-flight-timeline{grid-template-columns:68px minmax(70px,1fr) 68px;gap:6px;padding:17px 1px 11px}.portal-flight-timeline strong{font-size:21px}.portal-flight-timeline span{font-size:10px}.portal-flight-duration>span{font-size:9px!important}.portal-flight-route-copy{flex-direction:column;gap:4px}.portal-fare-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.portal-fare-option{padding:9px}.portal-flight-select-row{align-items:flex-start;flex-direction:column}.portal-flight-select-row .portal-btn{width:100%}.portal-sticky-next{position:static}.portal-passenger-fields{grid-template-columns:1fr}.portal-review-layout{grid-template-columns:1fr}.portal-price-summary{position:static}.portal-confirm-panel{padding:22px 14px}.portal-pnr-card{align-items:flex-start;flex-direction:column}.portal-confirm-leg{gap:8px;grid-template-columns:minmax(52px,1fr) minmax(55px,1fr) minmax(52px,1fr)}.portal-confirm-leg>div strong{font-size:20px}.portal-confirm-total{flex-wrap:wrap}.portal-manage-form,.portal-status-form{grid-template-columns:1fr}.portal-help-grid{grid-template-columns:1fr}.portal-footer{align-items:flex-start;flex-direction:column}.portal-extra-card{gap:9px;padding:12px}.portal-extra-icon{width:35px;height:35px}.portal-extra-copy strong{font-size:10px}.portal-extra-copy small{font-size:9px}.portal-extra-price{font-size:10px}.portal-extra-check{width:18px;height:18px}}
 @media(max-width:400px){.portal-brand small{font-size:8px}.portal-demo-indicator{display:none}.portal-hero-copy{max-width:90%}.portal-hero-art{width:28%;opacity:.4}.portal-hero h1{font-size:31px}.portal-route-grid{grid-template-columns:minmax(0,1fr) 29px minmax(0,1fr);gap:5px}.portal-airport-input{padding:0 5px}.portal-airport-input input{font-size:9px}.portal-fare-grid{grid-template-columns:1fr}.portal-search-fields{grid-template-columns:1fr 1fr}.portal-step-bar{display:none}}
+
+
+/* Mock checkout refresh: UI-only, no payment SDK or payment network integration. */
+.portal-mock-checkout{max-width:1180px;margin-inline:auto}
+.portal-mock-banner{display:flex;align-items:center;gap:12px;padding:14px 16px;margin:18px 0 22px;border:1px solid #e5c5cc;border-radius:12px;background:linear-gradient(110deg,#fff7f8,#fffdfb);color:#572033}
+.portal-mock-banner-icon{display:grid;place-items:center;flex:0 0 38px;height:38px;border-radius:10px;background:#f3e2e6;color:#762840}
+.portal-mock-banner>div{display:flex;flex:1;flex-direction:column;gap:4px;min-width:0}
+.portal-mock-banner strong{font-size:11px;letter-spacing:.075em}
+.portal-mock-banner small{font-size:11px;line-height:1.5;color:#806b70}
+.portal-mock-chip{padding:6px 9px;border-radius:6px;background:#f0e2e5;color:#762840;font-size:9px;font-weight:800;letter-spacing:.08em;white-space:nowrap}
+.portal-checkout-layout{align-items:start;gap:22px}
+.portal-checkout-card{padding:20px;margin-bottom:15px;border-color:#ece4e0;box-shadow:0 5px 18px rgba(62,33,35,.035)}
+.portal-checkout-section-title{display:flex;align-items:center;gap:11px;margin-bottom:17px}
+.portal-checkout-section-title>div{display:flex;flex:1;flex-direction:column;gap:4px}
+.portal-checkout-section-title h3{margin:0;font-size:14px;color:#38242a}
+.portal-checkout-section-title small{font-size:10px;color:#8c7b78;line-height:1.45}
+.portal-checkout-icon{display:grid;place-items:center;flex:0 0 38px;height:38px;border-radius:10px;background:#f8eff1;color:#762840}
+.portal-text-action{border:0;background:transparent;color:#762840;font:inherit;font-size:11px;font-weight:700;cursor:pointer;padding:7px}
+.portal-text-action:hover{text-decoration:underline}
+.portal-payment-methods-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:0}
+.portal-payment-tile{position:relative;display:flex;align-items:center;gap:11px;min-height:76px;padding:13px;border:1px solid #e8dfdc;border-radius:11px;background:#fff;text-align:left;color:#38242a;transition:border-color .18s,background .18s,box-shadow .18s}
+.portal-payment-tile:hover{border-color:#c9a3ad}
+.portal-payment-tile.active{border-color:#85364e;background:#fff8fa;box-shadow:0 0 0 2px rgba(133,54,78,.07)}
+.portal-method-symbol{display:grid;place-items:center;flex:0 0 35px;height:35px;border-radius:9px;background:#f6eff0;color:#762840;font-size:22px;font-weight:700}
+.portal-payment-method-copy{display:flex;flex:1;flex-direction:column;gap:5px;min-width:0}
+.portal-payment-method-copy strong{font-size:11px;line-height:1.3}
+.portal-payment-method-copy small{font-size:9px;line-height:1.35;color:#8c7b78}
+.portal-method-radio{display:grid;place-items:center;flex:0 0 18px;width:18px;height:18px;border:1px solid #d9ccca;border-radius:50%;color:#762840}
+.portal-payment-tile.active .portal-method-radio{border-color:#762840;background:#f2e3e7}
+.portal-method-preview{display:flex;align-items:center;gap:18px;margin-top:15px;padding:17px;border:1px dashed #decdd0;border-radius:11px;background:#fdf9f9;min-height:132px}
+.portal-demo-qr{position:relative;display:grid;place-items:center;flex:0 0 102px;width:102px;height:102px;overflow:hidden;border:7px solid white;border-radius:6px;background-color:#fff;background-image:repeating-conic-gradient(#442b32 0% 25%,#fff 0% 50%);background-size:13px 13px;box-shadow:0 1px 5px #dfd3d1}
+.portal-demo-qr:before,.portal-demo-qr:after{content:"";position:absolute;width:28px;height:28px;background:#fff;border:5px solid #442b32;box-shadow:inset 0 0 0 5px #fff,inset 0 0 0 10px #442b32}
+.portal-demo-qr:before{top:3px;left:3px}.portal-demo-qr:after{right:3px;bottom:3px}
+.portal-demo-qr span{position:relative;z-index:2;padding:5px 6px;background:#fff;border:1px solid #e4d5d8;border-radius:4px;color:#762840;font-size:10px;font-weight:900;letter-spacing:.12em}
+.portal-method-preview-copy{display:flex;flex:1;flex-direction:column;gap:7px;min-width:0}
+.portal-method-preview-copy>strong{font-size:12px;color:#3e2830}
+.portal-method-preview-copy p{margin:0;color:#837277;font-size:10px;line-height:1.65}
+.portal-preview-status{display:flex;align-items:center;gap:5px;color:#557c63;font-size:9px;font-weight:650}
+.portal-demo-card-art{display:flex;flex:0 0 150px;min-height:95px;flex-direction:column;justify-content:space-between;padding:12px;border-radius:9px;background:linear-gradient(135deg,#6c233c,#321c2c);color:#fff;box-shadow:0 5px 12px #d8c7ca}
+.portal-demo-card-art>span{font-size:9px;font-weight:800;letter-spacing:.12em}
+.portal-demo-card-art i{width:24px;height:17px;border:1px solid #e5c99a;border-radius:4px;background:linear-gradient(90deg,#d7b87d 0 30%,transparent 30% 34%,#d7b87d 34% 65%,transparent 65%)}
+.portal-demo-card-art b{font-size:10px;letter-spacing:.06em}
+.portal-demo-card-art small{font-size:7px;letter-spacing:.13em;color:#f3dfe4}
+.portal-preview-large-icon{display:grid;place-items:center;flex:0 0 82px;width:82px;height:82px;border-radius:12px;background:#f1e5e8;color:#762840}
+.portal-payment-outcomes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.portal-outcome-option{height:100%;box-sizing:border-box;margin:0;padding:13px}
+.portal-outcome-option strong{font-size:11px}
+.portal-outcome-option small{font-size:10px}
+.portal-outcome-option>svg{flex:0 0 auto}
+.portal-checkout-summary{position:sticky;top:20px;border:1px solid #e8dfe0;border-radius:13px;box-shadow:0 8px 25px rgba(62,33,35,.055);padding:21px}
+.portal-summary-secure{display:flex;align-items:center;gap:7px;margin-bottom:14px;color:#557c63;font-size:9px;font-weight:800;letter-spacing:.1em}
+.portal-checkout-summary>h3{margin:0 0 19px;font-size:16px;color:#39232b}
+.portal-checkout-summary .portal-price-row{margin:12px 0;font-size:11px}
+.portal-checkout-summary .portal-price-total{margin-top:17px;padding-top:16px}
+.portal-checkout-summary .portal-price-total strong{font-size:24px}
+.portal-summary-method{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:17px;padding:12px 0;border-top:1px solid #eee6e4;font-size:10px;color:#847575}
+.portal-summary-method strong{color:#492c35;text-align:right}
+.portal-summary-outcome{display:flex;align-items:flex-start;gap:9px;margin:3px 0 17px;padding:11px;border-radius:9px}
+.portal-summary-outcome>span{display:grid;place-items:center;flex:0 0 25px;height:25px;border-radius:7px}
+.portal-summary-outcome>div{display:flex;flex-direction:column;gap:4px}
+.portal-summary-outcome strong{font-size:10px}
+.portal-summary-outcome small{font-size:9px;line-height:1.5}
+.portal-summary-outcome.success{background:#f0f7f1;color:#356847}.portal-summary-outcome.success>span{background:#dcefe0}
+.portal-summary-outcome.decline{background:#fff2f1;color:#9a3c38}.portal-summary-outcome.decline>span{background:#fbe0de}
+.portal-checkout-submit{min-height:47px;font-size:12px}
+.portal-checkout-disclaimer{margin:13px 0 0;color:#9a8988;font-size:9px;line-height:1.6;text-align:center}
+@media(max-width:900px){.portal-checkout-layout{grid-template-columns:minmax(0,1fr)}.portal-checkout-summary{position:static;order:-1}.portal-checkout-summary .portal-price-total strong{font-size:22px}}
+@media(max-width:560px){.portal-mock-banner{align-items:flex-start;padding:12px;gap:9px}.portal-mock-chip{display:none}.portal-mock-banner strong{font-size:10px}.portal-mock-banner small{font-size:10px}.portal-checkout-card{padding:14px}.portal-payment-methods-grid,.portal-payment-outcomes{grid-template-columns:1fr}.portal-payment-tile{min-height:65px}.portal-method-preview{align-items:flex-start;gap:12px;padding:12px}.portal-demo-qr{flex-basis:82px;width:82px;height:82px;background-size:11px 11px}.portal-demo-qr:before,.portal-demo-qr:after{width:22px;height:22px}.portal-demo-card-art{flex-basis:120px;min-height:85px;padding:9px}.portal-demo-card-art b{font-size:8px}.portal-preview-large-icon{flex-basis:60px;width:60px;height:60px}.portal-method-preview-copy p{font-size:9px}.portal-checkout-summary{padding:16px}}
